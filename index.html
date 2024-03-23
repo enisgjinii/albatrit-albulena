@@ -115,8 +115,20 @@
               <p class="seconds_text">Sekonda</p>
             </li>
           </ul>
+          <audio id="myAudio" src="Background-song.mp3" preload="auto">
+          </audio>
+          <div style="text-align: center;">
+            <a onclick="togglePlay()" class="button btn-cta" data-aos="zoom-in"><i class="fi-xnsuxl-music-solid"><svg
+                  class="fi-padding" role="img" xmlns="http://www.w3.org/2000/svg" width="1000mm" height="1000mm"
+                  viewBox="0 0 1000 1000" style="width:1.33em; height:1.33em;vertical-align: middle;">
+                  <path id="path" fill="currentColor"
+                    d=" M 759 174C 781 174 798 191 798 212C 798 357 798 504 798 649C 798 652 798 655 797 658C 794 679 783 697 769 711C 749 733 720 749 688 757C 655 766 622 765 594 756C 565 747 538 727 529 695C 521 662 535 631 556 609C 576 588 605 572 638 563C 667 556 697 555 723 562C 723 562 723 384 723 384C 723 384 473 441 473 441C 473 531 473 622 473 712C 473 715 473 718 472 721C 469 741 458 759 444 774C 424 795 395 811 363 820C 330 828 297 828 269 819C 240 810 213 790 204 757C 196 725 210 694 231 672C 251 650 280 634 313 626C 342 618 372 618 398 624C 398 511 398 400 398 287C 398 269 410 254 427 250C 538 225 649 198 759 174C 759 174 759 174 759 174"
+                    transform=""></path>
+                </svg></i>Lesho muzik</a>
+          </div>
           <div class="spasi">
           </div>
+
           <script type="text/javascript">
             var tani = new Date();
             var ditë = tani.getDate();
@@ -172,9 +184,7 @@
     <!-- Begin regular-section-->
     <section class="section-light no-padding-top regular-section has-text-centered has-vertically-aligned-content"
       id="regular-section">
-      <div data-aos="fade-up" data-aos-easing="linear">
-        <img src="image/bismillah.png" class="bismillah has-text-centered" alt="Bismillahirrahmaanirrahiim">
-      </div>
+
       <p class="bodytext" data-aos="fade-up" data-aos-easing="linear">
         Qastete e bukura kalojnë shpejtë, <br>
         Por nuk harrohen kurrë . . . <br>
@@ -258,24 +268,40 @@
           <p class="tempat is-larger has-text-centered">
             <strong>Adora 2</strong>
             <br>
-
+            Adora 2 , Xërxë , Rahovec
             <br>
-            Kec. Bekasi Barat, Rahovec, Jawa Barat
-            <br>
+            <i>Kujdes me lokacionin sepse Adora 2 gjendet afer Adora 1 dhe jane perballe njera tjetres! Ju
+              falemiderit</i>
           </p>
         </div>
         <div class="section-map" data-aos="fade-up" data-aos-easing="linear">
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.1280267408406!2d106.9691569150978!3d-6.246854895478259!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e698d5988a190d9%3A0x22b6a052b0a6a5f3!2sRM.%20Pondok%20Kenanga!5e0!3m2!1sen!2sid!4v1579433583123!5m2!1sen!2sid"
-            width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1239.6459058015726!2d20.564346891779344!3d42.355495928560636!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1353bad9c2893ca9%3A0x9c74c567df5b965a!2sAdora1!5e0!3m2!1sen!2sid!4v1711202985552!5m2!1sen!2sid"
+            width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
         <div class="space40px"></div>
         <div class="has-text-centered" data-aos="fade-up" data-aos-easing="linear">
-          <a href="https://maps.google.com/maps?ll=-6.246855,106.971346&z=16&t=m&hl=en&gl=ID&mapclient=embed&daddr=RM.%20Pondok%20Kenanga%20Jl.%20Kenanga%20Raya%20No.9%20RT.001%2FRW.006A%2C%20Jakasampurna%20Bekasi%20Barat%2C%20Bekasi%20City%2C%20West%20Java%2017145@-6.2468549,106.9713456"
-            class="button btn-cta" target="_blank" data-aos="zoom-in">
+          <a href="https://maps.app.goo.gl/5R1WSrUgRtoaLVgA8" class="button btn-cta" target="_blank" data-aos="zoom-in">
             <i class="far fa-directions"></i>
             &nbsp;&nbsp;Google Maps
           </a>
+
+          <script>
+            var myAudio = document.getElementById("myAudio");
+            var isPlaying = false;
+
+            function togglePlay() {
+              isPlaying ? myAudio.pause() : myAudio.play();
+            }
+
+            myAudio.onplaying = function () {
+              isPlaying = true;
+            };
+            myAudio.onpause = function () {
+              isPlaying = false;
+            };
+          </script>
         </div>
       </div>
     </section>
@@ -392,7 +418,7 @@
 
             <a href="https://api.whatsapp.com/send?phone=+38349886559&text=Përshëndetje%20Sherly,%20unë%20do%20të%20vij%20në%20dasmën%20tënde!%20U%20trashegofshi"
               class="button btn-whatsapp" target="_blank" data-aos="zoom-in">
-              <i class="fab fa-whatsapp"></i> 
+              <i class="fab fa-whatsapp"></i>
               &nbsp;&nbsp;Kontakto
             </a>
 
