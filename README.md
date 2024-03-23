@@ -1,5 +1,3 @@
-Certainly! Let's create a **cool README** for the **"Albatrit-Albulena"** website repository hosted on GitHub by user **enisgjinii**. 🌸
-
 # Albatrit-Albulena Wedding Website
 
 Welcome to the **Albatrit-Albulena Wedding Website**! This repository celebrates the union of two souls amidst the breathtaking landscapes of the Albatrit and Albulena regions in Kosovo. Whether you're a guest, a curious wanderer, or simply a romantic at heart, this website has something special for you.
