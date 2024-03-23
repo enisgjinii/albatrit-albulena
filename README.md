@@ -27,16 +27,6 @@ Welcome to the **Albatrit-Albulena Wedding Website**! This repository celebrates
    cd albatrit-albulena
    ```
 
-3. **Install Dependencies**:
-   ```
-   npm install
-   ```
-
-4. **Start the Development Server**:
-   ```
-   npm start
-   ```
-
 ## Contributing
 
 We invite you to contribute to our love story!
